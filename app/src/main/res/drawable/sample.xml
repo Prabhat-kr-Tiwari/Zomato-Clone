@@ -1,0 +1,27 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="61dp"
+    android:height="61dp"
+    android:viewportWidth="61"
+    android:viewportHeight="61">
+
+    <group>
+        <clip-path
+            android:pathData="M61 30.5C61 47.3447 47.3447 61 30.5 61C13.6553 61 0 47.3447 0 30.5C0 13.6553 13.6553 0 30.5 0C47.3447 0 61 13.6553 61 30.5Z" />
+
+        <path
+            android:pathData="M0 0V61H61V0"
+            android:fillColor="#FFFFFF" />
+
+        <path
+            android:pathData="M61 30.5C61 47.3447 47.3447 61 30.5 61C13.6553 61 0 47.3447 0 30.5C0 13.6553 13.6553 0 30.5 0C47.3447 0 61 13.6553 61 30.5Z"
+            android:strokeWidth="4"
+            android:strokeColor="#EFEFEF" />
+
+        <!-- Drawable image of a star -->
+        <path
+            android:pathData="M30.5 7.3L35.5 20.6L49 23.8L38.5 34L40.5 47.8L30.5 40L20.5 47.8L22.5 34L12 23.8L25.5 20.6L30.5 7.3Z"
+            android:fillColor="#FFD700" />
+    </group>
+</vector>

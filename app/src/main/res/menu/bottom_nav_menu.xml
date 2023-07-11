@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_delivery"
+        android:icon="@drawable/delivery_icon"
+
+        android:title="@string/title_delivery" />
+
+    <item
+        android:id="@+id/navigation_dining"
+        android:icon="@drawable/dining_icon"
+        android:title="@string/title_dining" />
+
+    <item
+        android:id="@+id/navigation_money"
+        android:icon="@drawable/money_icon"
+        android:title="@string/title_money" />
+
+</menu>

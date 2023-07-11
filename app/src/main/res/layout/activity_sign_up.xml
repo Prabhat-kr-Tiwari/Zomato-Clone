@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SignUp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zomatoimage" />
+
+    <TextView
+        android:id="@+id/india_s_1_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="@dimen/marginMedium"
+        android:layout_marginEnd="@dimen/marginMedium"
+
+        android:gravity="center_horizontal|top"
+        android:text="@string/india_s_1_f"
+        android:textAppearance="@style/india_s_1_f" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="129dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/line_1"
+
+            />
+
+        <TextView
+            android:id="@+id/log_in_or_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginStart="15dp"
+            android:gravity="center_horizontal|top"
+            android:padding="5dp"
+            android:text="@string/log_in_or_s"
+            android:textAppearance="@style/log_in_or_s" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="129dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/line_1"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/rectangle"
+        app:boxStrokeColor="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ph_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/enter_phone_number" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="364dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/continue_text"
+        android:textColor="#FFF1F1"
+        android:textSize="20sp"/>
+
+   <!-- <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="364dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:background="@color/red"
+        android:text="@string/continue_text"
+        android:textColor="#FFF1F1"
+        android:textSize="20sp"
+        />-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="87dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_password"
+        android:textSize="11sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="150dp"
+            android:background="@drawable/ellipse"
+
+            android:src="@drawable/fui_ic_googleg_color_24dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/ellipse"
+
+            android:src="@drawable/dots" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="@string/by_continuing_you_agree_to_our_nterms_of_service_privacy_policy_content_policy"
+        android:textColor="#4D5056"
+        android:textSize="12sp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

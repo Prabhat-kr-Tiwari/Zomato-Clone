@@ -1,0 +1,56 @@
+package com.example.zomato.ui
+
+import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.example.zomato.Interface.ZomatoAPI
+
+import com.example.zomato.R
+import com.example.zomato.retrofithelper.RetrofitHelper
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val text:String="not found"
+        GlobalScope.launch(Dispatchers.Main) {
+            try {
+                val zomatoApi = RetrofitHelper.getInstance().create(ZomatoAPI::class.java)
+                val response = zomatoApi.getZomatoData()
+
+                if(response!=null){
+                    Log.d("helloo",response.body().toString())
+
+                }else{
+                    Log.d("helloo",text)
+                }
+            } catch (e: Exception) {
+                // Handle exceptions
+                Log.e("Prabh", "catch API call failed: ${e.message}")
+            }
+        }
+
+        /*val zomatoapi= RetrofitHelper.getInstance().create(ZomatoAPI::class.java)
+        GlobalScope.launch {
+
+            val result=zomatoapi.getRestaurantList()
+            if (result!=null)
+            {
+                val restrauntList=result.body()
+                if (restrauntList!=null)
+                {
+                    Log.d("Prabh",result.body().toString())
+
+
+
+                }
+                // Log.d("Prabh",result.body().toString())
+            }
+        }*/
+    }
+
+
+}

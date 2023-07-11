@@ -1,0 +1,29 @@
+ViewModel:
+
+ViewModel is responsible for holding and managing the UI-related data for an activity or fragment.
+It survives configuration changes, such as screen rotations, by retaining the data during the lifecycle of the associated activity or fragment.
+ViewModel allows the data to be decoupled from the UI components, promoting separation of concerns.
+It provides a way to store and retrieve data, handle user interactions, and perform business logic related to the UI.
+
+Repository:
+
+Repository acts as a mediator between the data sources (e.g., remote server, local database) and the ViewModel.
+It abstracts the data access details and provides a clean API for the ViewModel to fetch or save data.
+Repository centralizes data handling logic, enabling different data sources to be used transparently without affecting the ViewModel.
+It manages data caching, data synchronization, and other data-related operations.
+
+ViewModelFactory:
+
+ViewModelFactory is responsible for creating instances of the ViewModel with the required dependencies.
+It provides a way to pass dependencies to the ViewModel at the time of creation.
+ViewModelFactory is typically used when the ViewModel requires a parameterized constructor or when there are dependencies to be injected into the ViewModel.
+It helps with the separation of concerns and allows better testing by providing a way to inject mocks or stubs into the ViewModel during testing.
+
+The overall flow is as follows:
+
+The Activity or Fragment requests a ViewModel instance using the ViewModelProvider, which takes a ViewModelFactory as a parameter.
+The ViewModelProvider uses the ViewModelFactory to create an instance of the ViewModel, passing the required dependencies.
+The ViewModel, being lifecycle-aware, is associated with the lifecycle of the Activity or Fragment.
+The ViewModel interacts with the Repository to fetch or save data, perform business logic, and manage the UI-related state.
+The UI components observe the data changes in the ViewModel using LiveData or other observable mechanisms and update the UI accordingly.
+Using ViewModel, Repository, and ViewModelFactory together promotes separation of concerns, improves testability, and provides a clean and maintainable architecture for Android applications.

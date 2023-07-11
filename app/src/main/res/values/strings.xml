@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Zomato</string>
+
+    <string name="_100_green_deliveries">100% Green Deliveries</string>
+    <string name="carbon_and_plastic_neutral_in_india">Carbon and Plastic Neutral </string>
+    <string name="in_india">in india</string>
+    <string name="india_s_1_f">
+India #1 Food Delivery\nand Dining App
+</string>
+    <!-- strings.xml -->
+    <string name="log_in_or_s">
+Log in or sign up
+</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_delivery">Delivery</string>
+    <string name="title_dining">Dining</string>
+    <string name="title_money">Money</string>
+    <string name="first_name">First Name</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="continue_text">Continue</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="by_continuing_you_agree_to_our_nterms_of_service_privacy_policy_content_policy">By continuing, you agree to our \nTerms of Service,Privacy Policy,Content Policy</string>
+    <string name="kj_somaiya_">KJ Somaiya College of Eng...</string>
+    <string name="vidyanagar_">Vidyanagar, Vidya Vihar East,Ghatkopar E...\n</string>
+
+    <string name="recommended_txt">
+Recommended for you
+</string>
+    <string name="hangout_cak">
+Hangout\nCakes &amp;amp More
+</string>
+
+    <string name="bakery">
+Bakery
+</string>
+    <string name="min">
+30-35 min
+</string>
+    <string name="line_divide">
+Explore
+</string>
+    <string name="whats">
+Whats on your mind
+</string>
+</resources>
